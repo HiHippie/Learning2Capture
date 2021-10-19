@@ -134,15 +134,15 @@ def main(args):
 if __name__ == '__main__':
 
     parser = configargparse.ArgParser(description='Learning2Capture')
-    parser.add_argument('--dataset', type=str, default='mini', help='mini/tiered/cub')
-    parser.add_argument('--method', type=str, default="Prototype", help='DS/WS/Prototype')
-    parser.add_argument('--backbone', type=str, default='res18', help='res18/wrn/conv4')
+    parser.add_argument('--dataset', type=str, default='tiered', help='mini/tiered/cub')
+    parser.add_argument('--method', type=str, default="WS", help='DS/WS/Prototype')
+    parser.add_argument('--backbone', type=str, default='res18', help='res18/wrn')
     parser.add_argument('--ways', type=int, default=5, help='N-way K-shot task setup')
     parser.add_argument('--shots', type=int, default=1, help='N-way K-shot task setup {1/5}')
     parser.add_argument('--topk', type=int, default=10, help='topk selection in DS=3/WS=10/prototype=10')
     parser.add_argument('--num_latent', type=int, default=1, help='number of generated samples default=1')
     parser.add_argument('--n_queries', type=int, default=15, help='number of query samples')
-    parser.add_argument('--n_runs', type=int, default=600, help='number of query samples')
+    parser.add_argument('--n_runs', type=int, default=10000, help='number of query samples')
     args = parser.parse_args()
 
     print("----------{}-{}-{}W{}S-{}----------".format
