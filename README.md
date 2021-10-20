@@ -2,5 +2,6 @@
 
 Our pretrained method refers to https://github.com/nupurkmr9/S2M2_fewshot.
 
-After you have trained the self-supervised pre-trained model, put it in the "../checkpoints/{}_{}/features.plk".format({data},{backbone}) path. 
+After you have trained the self-supervised pre-trained model, put it in the "../checkpoints/{data}_{backbone}/features.plk" path.
+Or you can download our extracted features at https://drive.google.com/drive/folders/1UPRZc-yZVvv7PWY3SXpmKYLUKjL-raxJ?usp=sharing
 Then you can make evaluation by the Learning2Capture.py. 
