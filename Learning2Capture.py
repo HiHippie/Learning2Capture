@@ -53,8 +53,8 @@ def main(args):
     with open(_datasetFeaturesFiles, 'rb') as f:
         myfeatures = pickle.load(f)
 
-    novel_feature = myfeatures[2]
-    # base_feature = myfeatures[4]
+    novel_feature = myfeatures[2] # for mini/tiered/cub_res18_features and tiered_wrn_features
+    # novel_feature = myfeatures # for mini/cub_wrn_features
 
 
     # ---- classification for each task
