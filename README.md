@@ -10,8 +10,6 @@ pleast refer to it for the backbone training.
 
 You can run "save_plk.py" for the embedding extraction.
 
-Or you can download our extracted features at https://drive.google.com/drive/folders/1UPRZc-yZVvv7PWY3SXpmKYLUKjL-raxJ?usp=sharing
-
 ## Evaluation
 
 You can make evaluation through the "Learning2Capture.py". 
